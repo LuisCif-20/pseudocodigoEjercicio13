@@ -1,0 +1,36 @@
+Proceso
+	var opcion <- "N"
+	Hacer
+		var numero1
+		var numero2
+		var operacion
+		var total
+		var divi
+		Escribir "Ingresa el primer numero"
+		Leer numero1
+		Escribir "Ingresa el segundo numero2
+		Leer numero2
+		Escribir "Presiona 1 para sumarlos, presiona 2 para dividirlos"
+		Leer operacion
+		Si operacion = 1
+			total = numero1 + numero2
+			Escribir "El resultado de la suma es " + total
+			Escribir "Si desea realizar otra operacion pulse cuanquier letra, si no pulse "S""
+			Leer opcion
+		Sino
+			Si operacion = 2
+				Si numero2 = 0
+					Escribir "No es posible hacer la division"
+				Sino
+					divi = numero1/numero2
+					Escribir "El resultado de la division es " + divi
+					Escribir "Si desea realizar otra operacion pulse cuanquier letra, si no pulse "S""
+					Leer opcion 
+				FinSi
+			Sino
+				Escribir "No esta disponible la operacion"
+			FinSi
+	
+		FinSi
+	Mientras opcion != "S"
+FinProceso
